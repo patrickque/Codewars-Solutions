@@ -56,5 +56,9 @@ const greet = () => "hello world!";
 const invert = (arr) => arr.map(x => x * -1)
 
 
+////Implement a function which convert the given boolean value into its string representation.
+// Note: Only valid inputs will be given.
 
+//solution
+const booleanToString = b => b ? 'true' : 'false'
 
