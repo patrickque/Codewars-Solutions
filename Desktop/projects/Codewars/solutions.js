@@ -39,5 +39,22 @@ function areYouPlayingBanjo(name) {
 
 //   Style Points
 //   Sure, this is about as easy as it gets. But how clever can you be to create the most creative hello world you can think of? What is a "hello world" solution you would want to show your friends?
-  
+
+//solution
 const greet = () => "hello world!";
+
+
+////Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
+// You can assume that all values are integers. Do not mutate the input array/list.
+
+
+//solution
+const invert = (arr) => arr.map(x => x * -1)
+
+
+
+
