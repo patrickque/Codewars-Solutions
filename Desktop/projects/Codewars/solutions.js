@@ -6,7 +6,7 @@ function multiply(a, b){
   
 //solution
 
-const multiply = (a, b) => a * b
+const multiply = (a, b) => a * b;
   
 
 //// Create a function which answers the question "Are you playing banjo?".
@@ -28,9 +28,16 @@ function areYouPlayingBanjo(name) {
 function areYouPlayingBanjo(name) {
     if (typeof name === 'string') {
         if (name.charAt(0) === 'R' || name.charAt(0) === "r"){
-        return name + " plays banjo"
-      } else {
-        return name + " does not play banjo"
-      }
+            return name + " plays banjo";
+        } else {
+            return name + " does not play banjo";
+        }
     }
-  }
+}
+
+////  Make a simple function called greet that returns the most-famous "hello world!".
+
+//   Style Points
+//   Sure, this is about as easy as it gets. But how clever can you be to create the most creative hello world you can think of? What is a "hello world" solution you would want to show your friends?
+  
+const greet = () => "hello world!";
