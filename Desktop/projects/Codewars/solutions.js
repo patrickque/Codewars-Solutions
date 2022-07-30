@@ -274,3 +274,17 @@ function getMiddle(s){
     return s.charAt(s.length/2)
   }
 }
+
+////Write a function which calculates the average of the numbers in a given list.
+// Note: Empty arrays should return 0.
+
+//solution
+function find_average(array) {
+  let average = 0
+  array.forEach(num => average += num)
+  if(array.length == 0) {
+    return 0
+  } else {
+    return average / array.length
+  }
+}
