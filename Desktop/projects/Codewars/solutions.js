@@ -330,3 +330,13 @@ function doubleInteger(i) {
 function mergeArrays(arr1, arr2) {
   return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))))
 }
+
+
+////Complete the solution so that it reverses the string passed into it.
+// 'world'  =>  'dlrow'
+// 'word'   =>  'drow'
+
+//solution
+function solution(str){
+  return str.split("").reverse().join("")
+}
