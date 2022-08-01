@@ -471,3 +471,21 @@ function find_average(array) {
 function noSpace(x){
   return x.split(' ').join('')
 }
+
+
+////Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+// Note: input will never be an empty string
+
+//solution
+function fakeBin(x){
+  let digit = x.split('')
+  console.log(digit)
+  digit.forEach((element, i)=> {
+    if (element < 5) {
+      digit[i] = 0
+    } else if (element >= 5) {
+      digit[i] = 1
+    }
+  })
+  return digit.join('')
+}
