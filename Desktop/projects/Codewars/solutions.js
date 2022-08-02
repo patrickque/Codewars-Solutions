@@ -552,3 +552,9 @@ function cockroachSpeed(s) {
   let cmSpeed = s * 100000/3600
   return Math.floor(cmSpeed)
 }
+
+////Write a function which converts the input string to uppercase.
+//solution
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
