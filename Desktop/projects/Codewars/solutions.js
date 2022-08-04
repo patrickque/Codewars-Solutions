@@ -639,3 +639,15 @@ function filterLongWords(sentence, n) {
   const sentenceToArray = Array.from(sentence.split(' '))
   return sentenceToArray.filter(el => el.length > n )
 }
+
+
+////We need a function that can transform a number (integer) into a string.
+// Examples (input --> output):
+// 123  --> "123"
+// 999  --> "999"
+// -100 --> "-100"
+
+//solution
+function numberToString(num) {
+  return num.toString()
+}
