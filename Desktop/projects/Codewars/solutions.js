@@ -684,3 +684,12 @@ function unusedDigits(...num) {
   const numArrayToString = num.join('')  
   return digits.filter(digit => !numArrayToString.includes(digit)).join('')
 }
+
+
+//// JavaScript Arrays support a filter function (starting in JavaScript 1.6). Use the filter functionality to complete the function given.
+// The solution would work like the following:getEvenNumbers([2,4,5,6]) // should == [2,4,6]
+
+//solution
+function getEvenNumbers(numbersArray){
+  return numbersArray.filter(nr => nr % 2 === 0)
+}
