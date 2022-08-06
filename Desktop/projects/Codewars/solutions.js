@@ -714,6 +714,20 @@ function multiplyAndFilter(array, multiplier){
 }
 
 
+////Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+// For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+// [10, 343445353, 3453445, 3453545353453] should return 3453455.
+
+//solution
+function sumTwoSmallestNumbers(numbers) {  
+  const indexOfLowestOne = numbers.indexOf(Math.min(...numbers))
+  const lowestOne = Math.min(...numbers)
+  numbers.splice(indexOfLowestOne, 1)
+  const lowestTwo = Math.min(...numbers)
+  return lowestOne + lowestTwo;
+}
+
+
 //// Filter the array into unique values. You have 38 characters to do it in!
 // Input => [1, 1, 2, 3]
 // Output => [1, 2, 3]
@@ -1280,3 +1294,5 @@ function getNewNotes(salary,bills){
 function redistributeWealth(wealth) {
   wealth.fill(wealth.reduce((a, b) => a + b, 0) / wealth.length);
 }
+
+
