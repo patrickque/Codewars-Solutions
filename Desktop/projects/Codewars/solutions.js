@@ -751,3 +751,15 @@ function unique(arr) {
 function search(budget, prices) {
     return prices.filter(el => el <= budget).sort((a, b) => a - b).toString()
   }
+
+
+  
+////Write a function called "filterEvenLengthWords".
+// Given an array of strings, "filterEvenLengthWords" returns an array containing only the elements of the given array whose length is an even number.
+// var output = filterEvenLengthWords(['word', 'words', 'word', 'words']);
+// console.log(output); // --> ['word', 'word']
+
+//solution
+function filterEvenLengthWords(words) {
+  return words.filter(el => el.length % 2 == 0)
+}
