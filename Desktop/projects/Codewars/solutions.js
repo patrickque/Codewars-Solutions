@@ -1339,3 +1339,21 @@ function arr(N) {
 function dropCap(str) {
   return str.split(' ').map(el => el.length > 2 ? el[0].toUpperCase() + el.slice(1).toLowerCase() : el).join(' ');
 }
+
+
+////Instructions
+// Write a function that takes a single string (word) as argument. The function must return an ordered list containing the indexes of all capital letters in the string.
+// Example
+// Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
+
+//solution
+const capitals = function (word) {
+  const characters = word.split('');
+  let result = [];
+  for (let i = 0; i < characters.length; i++) {
+    if (characters[i] === characters[i].toUpperCase()) {
+      result.push(characters.indexOf(characters[i]))
+    }
+  }
+  return result;
+};
